@@ -2,13 +2,13 @@
 
 Bu demo, Sentry'nin Django uygulamalarında nasıl entegre edildiğini ve gerçek zamanlı hata izleme özelliklerini göstermek için hazırlanmıştır.
 
-## 🎯 Demo Amacı
+## Demo Amacı
 
 Canlı bir Django uygulamasında kasıtlı olarak farklı tipte hatalar tetikleyip Sentry dashboard'da nasıl göründüklerini sunum sırasında göstermek.
 
 ---
 
-## 📋 Ön Gereksinimler
+##  Ön Gereksinimler
 
 - Python 3.9+
 - pip
@@ -16,7 +16,7 @@ Canlı bir Django uygulamasında kasıtlı olarak farklı tipte hatalar tetikley
 
 ---
 
-## 🚀 Kurulum (5 Adım)
+##  Kurulum (5 Adım)
 
 ### 1. Sentry Projesi Oluştur
 1. https://sentry.io adresinde hesap aç
@@ -54,7 +54,7 @@ python manage.py runserver
 
 ---
 
-## 🎬 Sunum Akışı (Canlı Demo)
+##  Sunum Akışı (Canlı Demo)
 
 Her endpoint Sentry'de farklı bir özelliği gösterir:
 
@@ -86,7 +86,7 @@ Her endpoint Sentry'de farklı bir özelliği gösterir:
 
 ---
 
-## 📁 Dosya Yapısı
+##  Dosya Yapısı
 
 ```
 sentry-demo/
@@ -107,7 +107,7 @@ sentry-demo/
 
 ---
 
-## 🔑 Kritik Kod Parçaları (Sunumda Gösterilecek)
+##  Kritik Kod Parçaları (Sunumda Gösterilecek)
 
 ### Entegrasyon (`settings.py`)
 Sadece **6 satır** — Sentry'nin en büyük avantajlarından biri bu basitlik:
@@ -128,7 +128,7 @@ Bu kadar! Hiçbir view'da `try/except` yazmadan tüm unhandled exception'lar oto
 
 ---
 
-## 💡 Sunumda Vurgulanacak Noktalar
+##  Sunumda Vurgulanacak Noktalar
 
 - **Sıfır kod değişikliği**: Mevcut view'lara dokunmadan tüm hatalar yakalanıyor
 - **Context zenginliği**: Stack trace + local vars + request + user = reproduce etmeden debug
@@ -138,7 +138,7 @@ Bu kadar! Hiçbir view'da `try/except` yazmadan tüm unhandled exception'lar oto
 
 ---
 
-## 🛠 Sorun Giderme
+##  Sorun Giderme
 
 - **Sentry'de event görünmüyor:** DSN doğru mu? `sentry_sdk.capture_message("test")` ile test et.
 - **Import hatası:** `pip install -r requirements.txt` tekrar çalıştır.
